@@ -57,3 +57,4 @@ This line makes it possible to get a HTTPS-connection without having to flash a 
 
 As for Telegram: you will need to install the Telegram app on your phone. Once you've done that, create a bot. That's fairly easy to do. When you have created the bot you will need the bot token and the chat id. The BotFather knows it all. You will need to enter both credentials in the project's code on the place of the ***.
 
+As for the project code: I grabbed lines of code from all over the web. So definately not all code is mine!
