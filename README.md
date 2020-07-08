@@ -9,7 +9,7 @@ The architecture in short: the project is built around an ESP8266, a magnet and 
 
 [![TelegramDoorEvents](http://img.youtube.com/vi/YS4xPLxDfxo/0.jpg)](http://www.youtube.com/watch?v=YS4xPLxDfxo "TelegramDoorEvents")
 
-Here is an example of the input/output in your Telegram Bot, where you see some notifications of events and some commands and answers:
+Here is an example of the input/output in your Telegram Bot, where you see some notifications of events which occured and some commands and answers. My bot is called Frontdoor. You can name it any name you like.
 
 ![alt text](https://i.postimg.cc/Gmvcwf8n/telegram-frontdoor-bot.png)
 
@@ -31,7 +31,7 @@ Here is an example of the input/output in your Telegram Bot, where you see some 
 
 ## Closeups
 
-The NodeMCU ESP8266:
+My ESP8266 on a board with other components:
 
 ![alt text](https://i.postimg.cc/fbJk4CNc/esp8266-frontdoor.jpg)
 
@@ -42,3 +42,18 @@ The reedcontact in the closing bowl:
 The magnet glued onto the deadbolt: 
 
 ![alt text](https://i.postimg.cc/pTCSDfmS/magnet-frontdoor.png)
+
+
+## Software details
+
+AS for the WiFi connection. Enter your router's credentials on the place of the ***. 
+
+Hereby a disclaimer for the (in)secure connection! In my project I used this code:
+
+```javascript
+client.setInsecure();
+```
+This line makes it possible to get a HTTPS-connection without having to flash a new certificate or fingerprint to the ESP every time it changes. I know it's not adviceable but it's sooooo easy and for the simple purpose of this project I'm not too worried things will go wrong.
+
+As for Telegram: you will need to install the Telegram app on your phone. Once you've done that, create a bot. That's fairly easy to do. When you have created the bot you will need the bot token and the chat id. The BotFather knows it all. You will need to enter both credentials in the project's code on the place of the ***.
+
