@@ -46,7 +46,7 @@ The magnet glued onto the deadbolt:
 
 ## Software details
 
-AS for the WiFi connection. Enter your router's credentials on the place of the ***. 
+As for the WiFi connection. Enter your router's credentials on the place of the ***. 
 
 Hereby a disclaimer for the (in)secure connection! In my project I used this code:
 
